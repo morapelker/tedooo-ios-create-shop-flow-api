@@ -47,7 +47,7 @@ public struct EditShopFlowRequest {
     public let city: String?
     
     public let coverImage: String?
-    private let images: [String]
+    public let images: [String]
     
     public init(id: String, name: String?, description: String?, shopNumber: String?, keywords: [String], companyType: String, categories: [String], deliveryMethods: [String], countries: [String], qtyOptions: String?, phoneNumbers: [String], websites: [String], email: String?, foundedCountry: String?, address: String?, city: String?, coverImage: String?, images: [String]) {
         self.id = id
