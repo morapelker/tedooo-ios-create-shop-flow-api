@@ -28,7 +28,7 @@ public struct EditShopFlowRequest {
     
     
     public let id: String
-    public let name: String
+    public let name: String?
     public let description: String?
     public let shopNumber: String?
     public let keywords: [String]
@@ -42,14 +42,14 @@ public struct EditShopFlowRequest {
     public let websites: [String]
     public let email: String?
     
-    public let foundedCountry: String
+    public let foundedCountry: String?
     public let address: String?
     public let city: String?
     
     public let coverImage: String?
     private let images: [String]
     
-    public init(id: String, name: String, description: String?, shopNumber: String?, keywords: [String], companyType: String, categories: [String], deliveryMethods: [String], countries: [String], qtyOptions: String?, phoneNumbers: [String], websites: [String], email: String?, foundedCountry: String, address: String?, city: String?, coverImage: String?, images: [String]) {
+    public init(id: String, name: String?, description: String?, shopNumber: String?, keywords: [String], companyType: String, categories: [String], deliveryMethods: [String], countries: [String], qtyOptions: String?, phoneNumbers: [String], websites: [String], email: String?, foundedCountry: String?, address: String?, city: String?, coverImage: String?, images: [String]) {
         self.id = id
         self.name = name
         self.description = description
