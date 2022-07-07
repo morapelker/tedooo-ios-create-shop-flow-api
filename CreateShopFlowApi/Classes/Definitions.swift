@@ -73,9 +73,8 @@ public struct EditShopFlowRequest {
 
 public protocol CreateShopFlowApi {
         
-    func startFlow(in viewController: UIViewController) -> AnyPublisher<AddShopResult, AddShopError>
+    func startFlow(in viewController: UIViewController, fromOnBoarding: Bool) -> AnyPublisher<AddShopResult, AddShopError>
     
     func startEditFlow(in viewController: UIViewController, request: EditShopFlowRequest) -> AnyPublisher<AddShopResult, AddShopError>
- 
-    
+     
 }
