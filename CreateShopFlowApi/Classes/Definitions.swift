@@ -76,5 +76,7 @@ public protocol CreateShopFlowApi {
     func startFlow(in viewController: UIViewController) -> AnyPublisher<AddShopResult, AddShopError>
     
     func startEditFlow(in viewController: UIViewController, request: EditShopFlowRequest) -> AnyPublisher<AddShopResult, AddShopError>
+ 
+    func startInNavController(in navController: UINavigationController) -> AnyPublisher<AddShopResult, AddShopError>
     
 }
