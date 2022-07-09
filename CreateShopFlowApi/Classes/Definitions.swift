@@ -20,7 +20,7 @@ public struct AddShopResult {
 }
 
 public enum AddShopError: Error {
-    case flowCancelled
+    case flowCancelled(_ vc: UIViewController)
 }
 
 
